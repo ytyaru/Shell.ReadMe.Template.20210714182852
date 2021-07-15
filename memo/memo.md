@@ -9,6 +9,106 @@
 * GUIエディタで引数を入力する
 * 設定ファイルから生成する
 
+## コマンド
+
+項目|形式|コマンド引数|GUIエディタ|設定ファイル
+----|----|------------|-----------|------------
+`title`|Markdown(GFM)|`-t`|○|○
+`description`|Markdown(GFM)|`1`|○|○
+`natural-languages`|`言語コード`, `言語コード-国コード`, `['en-gb', 'ja-jp']`|○|○
+`cpu`|キーワード `x86`, `x64`, `armhf`
+`os`|キーワード `windows`,`mac`,`android`,`linux-debian-raspberrypios`|
+`sdk`|キーワード `Linux-Kernel`, `.NETCore5`, `MONO`, `g++`, `Python3.7`, `OpenJava`|○|○
+`programming-languages`|キーワード `bash`, `C`, `C++`(`cc`,`cpp`), `C#`(`cs`), `rust`(`rs`)|○|○
+`license`|ID-List `cc0`|○|○
+`logo`|path `docs/logo.(png)`|○|○
+`demo`|path `docs/demo.(png|gif|svg)`|○|○
+`docs`|Markdown(GFM) `[API Reference](https://...)`|○|○
+
+* CPU architecture
+	* 32 bit
+		* x86
+		* i386
+		* i686
+		* IA-32
+	* 64 bit
+		* x64
+		* x86_64
+		* amd64
+		* IA-64
+		* Intel 64
+
+## 言語キーワード
+
+* Programming
+	* `cs`,`c#`,`csharp`,`.net-c#`,`mono-c#`,`.net-c#-cui`
+		* sdk
+			* `.net`,`.netcore`,`.netcore5`,`dotnet`
+			* `mono`
+		* type
+			* `cui`
+			* `gui`
+			* `lib`
+			* `asp`
+	* `c`
+	* `cc`,`c++`,`cpp`
+	* `rs`,`rust` 
+	* `java`
+		* sdk
+			* openjava
+			* oracle
+* Script
+	* `sh`
+		* subset
+			* `bash`
+			* `sh`
+			* `zsh`
+	* `py`,`python`,`python3`,`python3.7`,`python3.7.3`
+		* `system`
+		* `pyenv global`
+		* `pipenv`
+		* package manager
+			* `pip`
+			* `venv`
+		* type
+			* cui
+			* gui
+			* tts
+				* openjtalk
+	* `go`
+	* `rb`,`ruby`
+	* `sql`
+		* dbms
+			* SQLite3
+			* MySQL
+			* PostglesQL
+	* `js`
+		* require
+			* browser
+			* node.js
+	* `node`,`nodejs`,`node.js`
+* markup
+	* `html`
+		* `pug`
+		* `css`
+			* `sass`
+		* `js`
+			* legacy
+			* require.js
+			* ES Module
+			* `typescript`
+	* `md`,`markdown`
+		* common markdown
+		* gfm (github flavored markdown	)
+	* `ad`,`asciidoc`
+* Structure Text
+	* toml
+	* yaml
+	* json
+	* xml
+
+	
+
 ## 設定ファイル
 
 　README生成するための設定ファイル。
