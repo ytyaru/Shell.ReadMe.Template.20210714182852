@@ -14,6 +14,12 @@ body = """
 """
 
 [installation]
+windows = ''
+mac = ''
+linux_debian = 'git python'
+linux_fedora = 'git python'
+linux_arch = 'git python'
+android = ''
 body = ''
 
 [requirement]
