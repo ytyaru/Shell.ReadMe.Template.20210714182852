@@ -1,4 +1,3 @@
-{% macro languages(default='en-gb') -%}
 {%- if 'nature_languages' in repo -%}
     {%- for lang_country in repo.nature_languages -%}
         {% set lc = lang_country.split('-') -%}
@@ -15,5 +14,3 @@
         [![{{ country }}]({{ flag }})](README.{{ lang }}.md "{{ lang_name }}")
     {%- endfor %}
 {%- endif -%}
-{%- endmacro %}
-

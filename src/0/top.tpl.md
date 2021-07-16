@@ -1,19 +1,18 @@
+{#- {% from 'macro/top.logo.md' import logo with context -%} -#}
 {% from 'macro/top.languages.md' import languages with context -%}
 {% from 'macro/top.badges.md' import badges with context -%}
-{% if repo.logo -%}
-![logo]({{ repo.logo }})
-{%- endif %}
-
+{#- {% from 'macro/top.demo.md' import demo with context -%} -#}
+{#- {% from 'macro/top.docs.md' import docs with context -%} -#}
+{#- {{- logo() -}} -#}
+{% include 'top/include/logo.md' -%}
 # {{ repo.name }} {{ languages() }}
 
 {{ badges() }}
 
 {{ repo.summary }}
 
-{% if repo.demo -%}
-* [demo]({{ repo.demo }})
-{%- endif %}
-{% if repo.docs -%}
-* [docs]({{ repo.docs }})
-{%- endif %}
+{% include 'top/include/demo.md' %}
+{% include 'top/include/docs.md' %}
+{#- {{ demo() }} -#}
+{#- {{ docs() }} -#}
 
