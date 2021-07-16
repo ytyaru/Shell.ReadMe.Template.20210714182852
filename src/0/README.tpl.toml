@@ -1,0 +1,9 @@
+[repo]
+name = 'READMEの表題となるリポジトリ名'
+summary = 'READMEに書く概要説明。'
+nature_languages = ['en', 'ja', 'en-us']
+programming_languages = ['python']
+license = 'cc0'
+logo = 'docs/logo.(png)'
+demo = 'docs/demo.(png|gif|svg)'
+docs = 'https://...'
