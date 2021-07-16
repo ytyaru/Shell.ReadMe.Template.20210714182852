@@ -7,3 +7,22 @@ license = 'cc0'
 logo = 'docs/logo.png|gif|svg'
 demo = 'docs/demo.png|gif|svg'
 docs = 'https://...'
+
+[feature]
+body = """
+* こんな特徴があります
+"""
+
+[installation]
+body = ''
+
+[requirement]
+
+[note]
+
+[author]
+
+[usage]
+
+[license]
+
