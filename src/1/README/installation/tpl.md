@@ -18,10 +18,11 @@
 
 ## Packages
 
+{% include 'sdk/csharp/dotnet.md' ignore missing -%}
+{% include 'sdk/csharp/mono.md' ignore missing -%}
+{% include 'sdk/rust/cargo.md' ignore missing -%}
 {% include 'sdk/python/pipenv.md' ignore missing -%}
 {% include 'sdk/python/pip.md' ignore missing -%}
-{% include 'sdk/charp/dotnet.md' ignore missing -%}
-{% include 'sdk/charp/mono.md' ignore missing -%}
+{% include 'sdk/ruby/gem.md' ignore missing -%}
 
 {%- endif %}
-
